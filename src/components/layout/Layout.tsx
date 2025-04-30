@@ -18,7 +18,7 @@ const Layout: React.FC = () => {
               <HiOutlineMenu className="icon" />
             </Link>
           </div>
-          <div className="nav-left">
+          <div className="nav-center">
             <Link to="/" className="logo">
               NORD
             </Link>

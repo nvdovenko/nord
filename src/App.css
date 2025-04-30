@@ -4,10 +4,9 @@
   align-items: center;
 }
 
-.nav-left .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-decoration: none;
+.nav-left {
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-right {
@@ -16,9 +15,16 @@
 }
 
 .nav-center {
+  font-weight: bold;
+  font-size: 1.4rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.nav-center .logo:hover {
+  text-decoration: none;
 }
 
 .icon {
