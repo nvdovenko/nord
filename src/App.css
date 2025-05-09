@@ -1,32 +1,54 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
 .nav-left {
   display: flex;
-  gap: 1rem;
-}
-
-.nav-right {
-  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .nav-center {
   font-weight: bold;
   font-size: 1.4rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   text-decoration: none;
+  justify-self: center;
 }
 
 .nav-center .logo:hover {
   text-decoration: none;
 }
 
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
 .icon {
   font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .nav-left {
+    order: 1;
+  }
+
+  .nav-center {
+    order: 2;
+    margin-left: 0.5rem;
+  }
+
+  .nav-right {
+    order: 3;
+    justify-content: flex-end;
+  }
 }
