@@ -1,0 +1,24 @@
+.fav-product-card {
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buy-button {
+  margin-top: 0.5rem;
+  padding: 0.8rem 0.8rem;
+  border: 0.1rem solid black;
+  color: black;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.buy-button:hover {
+  border-color: grey;
+  color: grey;
+}
