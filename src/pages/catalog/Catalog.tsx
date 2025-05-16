@@ -10,7 +10,7 @@ const Catalog: React.FC = () => {
 
   useEffect(() => {
     const storedFavorites = JSON.parse(
-      localStorage.getItem('favorites') || '[]'
+      localStorage.getItem('nord-favorites') || '[]'
     );
     setFavorites(storedFavorites);
   }, []);
@@ -23,7 +23,7 @@ const Catalog: React.FC = () => {
       updatedFavorites = [...favorites, id];
     }
     setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    localStorage.setItem('nord-favorites', JSON.stringify(updatedFavorites));
   };
 
   return (

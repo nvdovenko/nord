@@ -4,12 +4,17 @@ import products from '../../../public/data/products.json';
 
 import './favorites.css';
 
+type CartItem = {
+  id: number;
+  quantity: number;
+};
+
 const Favorites: React.FC = () => {
   const [favorites, setFavorites] = useState<number[]>([]);
 
   useEffect(() => {
     const storedFavorites = JSON.parse(
-      localStorage.getItem('favorites') || '[]'
+      localStorage.getItem('nord-favorites') || '[]'
     );
     setFavorites(storedFavorites);
   }, []);
@@ -17,7 +22,25 @@ const Favorites: React.FC = () => {
   const removeFavorite = (id: number) => {
     const updatedFavorites = favorites.filter((favId) => favId !== id);
     setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    localStorage.setItem('nord-favorites', JSON.stringify(updatedFavorites));
+  };
+
+  const handleAddToCart = (id: number) => {
+    const storedCart: CartItem[] = JSON.parse(
+      localStorage.getItem('nord-cart') || '[]'
+    );
+    const existingItem = storedCart.find((item) => item.id === id);
+
+    let updatedCart;
+    if (existingItem) {
+      updatedCart = storedCart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      );
+    } else {
+      updatedCart = [...storedCart, { id, quantity: 1 }];
+    }
+
+    localStorage.setItem('nord-cart', JSON.stringify(updatedCart));
   };
 
   const favoriteProducts = products.filter((product) =>
@@ -47,7 +70,12 @@ const Favorites: React.FC = () => {
               <p className="product-name">{product.name}</p>
               <p className="product-price">{product.price}</p>
             </div>
-            <button className="buy-button">ADD TO CART</button>
+            <button
+              className="buy-button"
+              onClick={() => handleAddToCart(product.id)}
+            >
+              ADD TO CART
+            </button>
           </div>
         ))}
       </div>
