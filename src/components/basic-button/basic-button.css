@@ -1,0 +1,32 @@
+button {
+  width: 100%;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #636262;
+}
+
+button.secondary {
+  background-color: #f0f0f0;
+  margin-top: 0.5rem;
+  padding: 0.8rem 0.8rem;
+  border: 0.1rem solid black;
+  color: black;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+button.secondary:hover {
+  border-color: grey;
+  color: grey;
+}

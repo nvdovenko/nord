@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import products from '../../../public/data/products.json';
 import './cart.css';
+import '../../components/basic-button/basic-button.ts';
 
 type CartItem = {
   id: number;
@@ -81,7 +82,7 @@ const Cart: React.FC = () => {
           TOTAL PRICE: $
           {cartProducts.reduce((sum, p) => sum + p.totalPrice, 0).toFixed(2)}
         </div>
-        <button className="cart-buy-button">BUY NOW</button>
+        <basic-button label="BUY NOW"> </basic-button>
       </div>
     </div>
   );

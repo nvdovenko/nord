@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { HiHeart } from 'react-icons/hi';
 import products from '../../../public/data/products.json';
+import '../../components/basic-button/basic-button.ts';
 
 import './favorites.css';
 
@@ -70,12 +71,12 @@ const Favorites: React.FC = () => {
               <p className="product-name">{product.name}</p>
               <p className="product-price">{product.price}</p>
             </div>
-            <button
-              className="buy-button"
+
+            <basic-button
+              label="ADD TO CART"
+              secondary
               onClick={() => handleAddToCart(product.id)}
-            >
-              ADD TO CART
-            </button>
+            ></basic-button>
           </div>
         ))}
       </div>
