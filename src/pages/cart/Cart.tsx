@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import products from '../../../public/data/products.json';
 import './cart.css';
 import '../../components/basic-button/basic-button.ts';
+import '../../components/quantity-selector/quantity-selector.ts';
 
 type CartItem = {
   id: number;
@@ -65,13 +66,19 @@ const Cart: React.FC = () => {
             <div className="cart-details">
               <p className="cart-name">{product.name}</p>
               <p className="cart-price">${product.totalPrice.toFixed(2)}</p>
-              <div className="quantity-selector">
-                <button onClick={() => changeQuantity(product.id, -1)}>
-                  -
-                </button>
-                <span>{product.quantity}</span>
-                <button onClick={() => changeQuantity(product.id, 1)}>+</button>
-              </div>
+
+              <quantity-selector
+                value={product.quantity}
+                onQuantityChange={(e: CustomEvent) =>
+                  changeQuantity(
+                    product.id,
+                    (e as CustomEvent).detail.value - product.quantity
+                  )
+                }
+                onQuantityZero={() =>
+                  changeQuantity(product.id, -product.quantity)
+                }
+              ></quantity-selector>
             </div>
           </div>
         ))}

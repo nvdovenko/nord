@@ -9,6 +9,15 @@ declare module 'react' {
         },
         HTMLElement
       >;
+
+      ['quantity-selector']: React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & {
+          value?: number;
+          onQuantityChange?: (event: CustomEvent<{ value: number }>) => void;
+          onQuantityZero?: (event: CustomEvent<void>) => void;
+        },
+        HTMLElement
+      >;
     }
   }
 }
@@ -22,6 +31,13 @@ declare global {
   declare module '*.css?inline' {
     const content: string;
     export default content;
+  }
+
+  interface HTMLElementEventMap {
+    QuantityChange: CustomEvent<{
+      value: number;
+    }>;
+    QuantityZero: CustomEvent<void>;
   }
 }
 
