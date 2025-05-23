@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "name": "T-shirt for women",
+    "name": "Shirt for women",
     "price": "$19.99",
-    "image": "/pictures/product1.jpg"
+    "image": "/pictures/product8.jpg"
   },
   {
     "id": 2,
-    "name": "T-shirt for women",
+    "name": "Jeans",
     "price": "$9.99",
     "image": "/pictures/product2.jpg"
   },
   {
     "id": 3,
-    "name": "T-shirt for women",
+    "name": "Pants for women",
     "price": "$9.99",
     "image": "/pictures/product3.jpg"
   },
   {
     "id": 4,
-    "name": "T-shirt for men",
+    "name": "Pants for men",
     "price": "$29.99",
     "image": "/pictures/product4.jpg"
   },
   {
     "id": 5,
-    "name": "Womens T-shirt",
+    "name": "Summer hat",
     "price": "$19.99",
     "image": "/pictures/product5.jpg"
   },
   {
     "id": 6,
-    "name": "Womens T-shirt",
+    "name": "Dress for women",
     "price": "$6.99",
     "image": "/pictures/product6.jpg"
   },
@@ -43,8 +43,68 @@
   },
   {
     "id": 8,
-    "name": "Kids T-shirt",
-    "price": "$9.99",
+    "name": "Jeans",
+    "price": "$29.99",
     "image": "/pictures/product8.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Summer shirt for women",
+    "price": "$24.99",
+    "image": "/pictures/product16.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Sea style dress",
+    "price": "$19.99",
+    "image": "/pictures/product9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Summer dress",
+    "price": "$24.99",
+    "image": "/pictures/product10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Summer dress",
+    "price": "$24.99",
+    "image": "/pictures/product11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Summer dress",
+    "price": "$24.99",
+    "image": "/pictures/product12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Summer shorts",
+    "price": "$4.99",
+    "image": "/pictures/product13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Summer dress",
+    "price": "$24.99",
+    "image": "/pictures/product14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Summer dress",
+    "price": "$19.99",
+    "image": "/pictures/product15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Summer shorts",
+    "price": "$14.99",
+    "image": "/pictures/product16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Summer shirt",
+    "price": "$14.99",
+    "image": "/pictures/product17.jpg"
   }
 ]
