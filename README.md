@@ -6,7 +6,11 @@ The project is currently **in progress** — features and design will be added a
 
 ## Demo
 
-Will be available later.
+Coming soon.
+
+## Trello board
+
+Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9ce34770b6b4ba876711fd35013a07812E5C13EB/nord)">[LINK]</a> 
 
 ## Tech Stack
 
