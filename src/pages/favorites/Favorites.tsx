@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { HiHeart } from 'react-icons/hi';
-import products from '../../../public/data/products.json';
-import '../../components/basic-button/basic-button.ts';
-
-import './favorites.css';
+import products from '../../data/products.json';
+import ProductCard from '../../components/product-card/ProductCard';
 
 type CartItem = {
   id: number;
@@ -57,27 +54,15 @@ const Favorites: React.FC = () => {
       <div className="header-container">FAVORITES</div>
       <div className="product-grid">
         {favoriteProducts.map((product) => (
-          <div key={product.id} className="fav-product-card">
-            <div className="image-container">
-              <img src={product.image} alt={product.name} />
-              <button
-                className="favorite-btn"
-                onClick={() => removeFavorite(product.id)}
-              >
-                <HiHeart className="heart-icon active" />
-              </button>
-            </div>
-            <div className="product-info">
-              <p className="product-name">{product.name}</p>
-              <p className="product-price">{product.price}</p>
-            </div>
-
-            <basic-button
-              label="ADD TO CART"
-              secondary
-              onClick={() => handleAddToCart(product.id)}
-            ></basic-button>
-          </div>
+          <ProductCard
+            key={product.id}
+            product={product}
+            isFavorite={true}
+            onToggleFavorite={removeFavorite}
+            showAddToCart={true}
+            onAddToCart={handleAddToCart}
+            isFavoritesPage={true}
+          />
         ))}
       </div>
     </div>

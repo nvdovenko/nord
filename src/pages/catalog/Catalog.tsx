@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
-
-import { HiOutlineHeart, HiHeart } from 'react-icons/hi';
-import products from '../../../public/data/products.json';
-
-import './catalog.css';
+import products from '../../data/products.json';
+import ProductCard from '../../components/product-card/ProductCard';
 
 const Catalog: React.FC = () => {
   const [favorites, setFavorites] = useState<number[]>([]);
@@ -31,25 +28,12 @@ const Catalog: React.FC = () => {
       <div className="header-container">CATALOG</div>
       <div className="product-grid">
         {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <div className="image-container">
-              <img src={product.image} alt={product.name} />
-              <button
-                className="favorite-btn"
-                onClick={() => toggleFavorite(product.id)}
-              >
-                {favorites.includes(product.id) ? (
-                  <HiHeart className="heart-icon active" />
-                ) : (
-                  <HiOutlineHeart className="heart-icon" />
-                )}
-              </button>
-            </div>
-            <div className="product-info">
-              <p className="product-name">{product.name}</p>
-              <p className="product-price">{product.price}</p>
-            </div>
-          </div>
+          <ProductCard
+            key={product.id}
+            product={product}
+            isFavorite={favorites.includes(product.id)}
+            onToggleFavorite={toggleFavorite}
+          />
         ))}
       </div>
     </div>

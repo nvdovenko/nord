@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import products from '../../../public/data/products.json';
+import products from '../../data/products.json';
 import './cart.css';
 import '../../components/basic-button/basic-button.ts';
 import '../../components/quantity-selector/quantity-selector.ts';
