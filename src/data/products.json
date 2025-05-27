@@ -106,5 +106,35 @@
     "name": "Summer shirt",
     "price": "$14.99",
     "image": "/pictures/product17.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Dress for kids",
+    "price": "$14.99",
+    "image": "/pictures/product19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Dress for kids",
+    "price": "$14.99",
+    "image": "/pictures/product20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Dress for kids",
+    "price": "$14.99",
+    "image": "/pictures/product21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Dress for kids",
+    "price": "$14.99",
+    "image": "/pictures/product22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Dress for kids",
+    "price": "$14.99",
+    "image": "/pictures/product23.jpg"
   }
 ]

@@ -10,7 +10,7 @@ Coming soon.
 
 ## Trello board
 
-Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9ce34770b6b4ba876711fd35013a07812E5C13EB/nord)">[LINK]</a> 
+Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9ce34770b6b4ba876711fd35013a07812E5C13EB/nord)">[LINK]</a>
 
 ## Tech Stack
 
@@ -32,7 +32,7 @@ Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9
 - [x] Product catalog
 - [x] Add/remove favorites (saved to localStorage)
 - [x] Favorites page
-- [ ] Shopping cart
+- [x] Shopping cart
 - [ ] Authentication
 - [ ] Backend integration
 - [ ] Responsive mobile layout
@@ -52,4 +52,7 @@ Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9
    npm run dev
    ```
 
+## Tools used
 
+- **Gemini** – For generating product illustrations and pictures.
+- **ChatGPT** – For learning, troubleshooting, and writing parts of the codebase.
