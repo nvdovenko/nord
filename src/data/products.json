@@ -136,5 +136,107 @@
     "name": "Dress for kids",
     "price": "$14.99",
     "image": "/pictures/product23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Running set",
+    "price": "$34.99",
+    "image": "/pictures/product24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Running set",
+    "price": "$34.99",
+    "image": "/pictures/product25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Running set",
+    "price": "$34.99",
+    "image": "/pictures/product26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Sport longsleeve",
+    "price": "$24.99",
+    "image": "/pictures/product27.png"
+  },
+  {
+    "id": 28,
+    "name": "Jacket for men",
+    "price": "$64.99",
+    "image": "/pictures/product28.png"
+  },
+  {
+    "id": 29,
+    "name": "Joga set",
+    "price": "$44.99",
+    "image": "/pictures/product29.png"
+  },
+  {
+    "id": 30,
+    "name": "Hiking jacket",
+    "price": "$134.99",
+    "image": "/pictures/product30.png"
+  },
+  {
+    "id": 31,
+    "name": "Hiking set",
+    "price": "$34.99",
+    "image": "/pictures/product31.png"
+  },
+  {
+    "id": 32,
+    "name": "Hiking set",
+    "price": "$34.99",
+    "image": "/pictures/product32.png"
+  },
+  {
+    "id": 33,
+    "name": "Running set",
+    "price": "$34.99",
+    "image": "/pictures/product33.png"
+  },
+  {
+    "id": 34,
+    "name": "Baby dress",
+    "price": "$34.99",
+    "image": "/pictures/product34.png"
+  },
+  {
+    "id": 35,
+    "name": "Pajamas for kids",
+    "price": "$24.99",
+    "image": "/pictures/product35.png"
+  },
+  {
+    "id": 36,
+    "name": "Boys outdoor set",
+    "price": "$34.99",
+    "image": "/pictures/product36.png"
+  },
+  {
+    "id": 37,
+    "name": "Boys outdoor set",
+    "price": "$54.99",
+    "image": "/pictures/product37.png"
+  },
+  {
+    "id": 38,
+    "name": "Baby set",
+    "price": "$34.99",
+    "image": "/pictures/product38.png"
+  },
+  {
+    "id": 39,
+    "name": "Longslive shirt",
+    "price": "$34.99",
+    "image": "/pictures/product39.png"
+  },
+  {
+    "id": 40,
+    "name": "Baby set",
+    "price": "$24.99",
+    "image": "/pictures/product40.png"
   }
 ]
