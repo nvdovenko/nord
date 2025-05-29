@@ -10,7 +10,7 @@ Coming soon.
 
 ## Trello board
 
-Available at <a href="https://trello.com/invite/b/6825d1896d99d5361efb4ef3/ATTI9ce34770b6b4ba876711fd35013a07812E5C13EB/nord)">[LINK]</a>
+Available at <a href="https://trello.com/b/xUZHIL1B/nord">[LINK]</a>
 
 ## Tech Stack
 
