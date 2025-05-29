@@ -1,0 +1,95 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: transform 0.4s ease;
+}
+
+.banner:hover img {
+  transform: scale(1.02);
+}
+
+.full-width img {
+  max-height: 450px;
+}
+
+.double-vertical {
+  display: flex;
+  gap: 1rem;
+}
+
+.vertical {
+  flex: 1;
+}
+
+.vertical img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.wide-short img {
+  max-height: 350px;
+}
+
+.overlay {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.overlay.lower {
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.shop-button {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .double-vertical {
+    flex-direction: column;
+  }
+
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .shop-button {
+    font-size: 0.9rem;
+  }
+}
