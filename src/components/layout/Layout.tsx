@@ -4,7 +4,7 @@ import {
   HiOutlineMenu,
   HiOutlineSearch,
   HiOutlineHeart,
-  HiOutlineShoppingCart,
+  HiOutlineShoppingBag,
   HiOutlineUser,
 } from 'react-icons/hi';
 
@@ -31,7 +31,7 @@ const Layout: React.FC = () => {
               <HiOutlineHeart className="icon" title="Favorites" />
             </Link>
             <Link to="/cart" className="icon-link">
-              <HiOutlineShoppingCart className="icon" title="Cart" />
+              <HiOutlineShoppingBag className="icon" title="Cart" />
             </Link>
             <Link to="/auth" className="icon-link">
               <HiOutlineUser className="icon" title="Log in" />

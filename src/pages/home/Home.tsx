@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <div className="overlay lower">
           <p>NEW</p>
           <Link to="/catalog" className="shop-button">
-            Discover now
+            DISCOVER NOW
           </Link>
         </div>
       </div>
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           <div className="overlay">
             <p>FOR HER</p>
             <Link to="/catalog" className="shop-button">
-              Shop
+              SHOP
             </Link>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Home: React.FC = () => {
           <div className="overlay">
             <p>FOR HIM</p>
             <Link to="/catalog" className="shop-button">
-              Shop
+              SHOP
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         <div className="overlay center">
           <p>LIMITED</p>
           <Link to="/catalog" className="shop-button">
-            Don't miss out
+            DON'T MISS OUT
           </Link>
         </div>
       </div>
