@@ -238,5 +238,65 @@
     "name": "Baby set",
     "price": "$24.99",
     "image": "/pictures/product40.png"
+  },
+  {
+    "id": 41,
+    "name": "Jacket",
+    "price": "$124.99",
+    "image": "/pictures/product41.png"
+  },
+  {
+    "id": 42,
+    "name": "Hoodie",
+    "price": "$14.99",
+    "image": "/pictures/product42.png"
+  },
+  {
+    "id": 43,
+    "name": "Jacket",
+    "price": "$44.99",
+    "image": "/pictures/product43.png"
+  },
+  {
+    "id": 44,
+    "name": "Jeans jumpsuit",
+    "price": "$24.99",
+    "image": "/pictures/product44.png"
+  },
+  {
+    "id": 45,
+    "name": "Baby set",
+    "price": "$24.99",
+    "image": "/pictures/product45.png"
+  },
+  {
+    "id": 46,
+    "name": "Womans joga set",
+    "price": "$24.99",
+    "image": "/pictures/product46.png"
+  },
+  {
+    "id": 47,
+    "name": "Womans jacket",
+    "price": "$24.99",
+    "image": "/pictures/product47.png"
+  },
+  {
+    "id": 48,
+    "name": "Womans jacket",
+    "price": "$24.99",
+    "image": "/pictures/product48.png"
+  },
+  {
+    "id": 49,
+    "name": "Sport hoodie",
+    "price": "$24.99",
+    "image": "/pictures/product49.png"
+  },
+  {
+    "id": 50,
+    "name": "Hat",
+    "price": "$4.99",
+    "image": "/pictures/product50.png"
   }
 ]
