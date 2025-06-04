@@ -16,6 +16,14 @@ export class BasicButton extends HTMLElement {
 
     // Load styles
     this.loadStyles(shadow);
+
+    this.buttonEl.addEventListener('click', (event) => {
+      // Prevent the original event from bubbling further
+      event.stopPropagation();
+
+      // Dispatch a new event from the host element that bubbles up to React
+      this.dispatchEvent(new Event('click', { bubbles: true, composed: true }));
+    });
   }
 
   // Called when the element is added to the DOM

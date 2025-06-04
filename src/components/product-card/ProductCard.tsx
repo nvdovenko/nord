@@ -18,6 +18,7 @@ type ProductCardProps = {
   showAddToCart?: boolean;
   onAddToCart?: (id: number) => void;
   isFavoritesPage?: boolean;
+  onClick?: () => void;
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -27,14 +28,18 @@ const ProductCard: React.FC<ProductCardProps> = ({
   showAddToCart = false,
   onAddToCart,
   isFavoritesPage = false,
+  onClick,
 }) => {
   return (
     <div className={isFavoritesPage ? 'fav-product-card' : 'product-card'}>
       <div className="image-container">
-        <img src={product.image} alt={product.name} />
+        <img src={product.image} alt={product.name} onClick={onClick} />
         <button
           className="favorite-btn"
-          onClick={() => onToggleFavorite(product.id)}
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent triggering image click
+            onToggleFavorite(product.id);
+          }}
         >
           {isFavorite ? (
             <HiHeart className="heart-icon active" />
@@ -52,7 +57,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <basic-button
           label="ADD TO CART"
           secondary
-          onClick={() => onAddToCart(product.id)}
+          onClick={(e: Event) => {
+            e.stopPropagation(); // Prevent triggering image click
+            onAddToCart(product.id);
+          }}
         ></basic-button>
       )}
     </div>

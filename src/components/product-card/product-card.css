@@ -14,7 +14,7 @@
 }
 
 .fav-product-card {
-  border-radius: 0px;
+  cursor: pointer;
   overflow: hidden;
   position: relative;
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import products from '../../data/products.json';
 import ProductCard from '../../components/product-card/ProductCard';
 
@@ -9,6 +10,7 @@ type CartItem = {
 
 const Favorites: React.FC = () => {
   const [favorites, setFavorites] = useState<number[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedFavorites = JSON.parse(
@@ -49,6 +51,10 @@ const Favorites: React.FC = () => {
     return <p>No favorite items yet.</p>;
   }
 
+  const handleOpenProduct = (id: number) => {
+    navigate(`/product/${id}`);
+  };
+
   return (
     <div className="catalog">
       <div className="header-container">FAVORITES</div>
@@ -62,6 +68,7 @@ const Favorites: React.FC = () => {
             showAddToCart={true}
             onAddToCart={handleAddToCart}
             isFavoritesPage={true}
+            onClick={() => handleOpenProduct(product.id)}
           />
         ))}
       </div>

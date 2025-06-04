@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import products from '../../data/products.json';
 import ProductCard from '../../components/product-card/ProductCard';
 
 const Catalog: React.FC = () => {
   const [favorites, setFavorites] = useState<number[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedFavorites = JSON.parse(
@@ -23,6 +25,10 @@ const Catalog: React.FC = () => {
     localStorage.setItem('nord-favorites', JSON.stringify(updatedFavorites));
   };
 
+  const handleOpenProduct = (id: number) => {
+    navigate(`/product/${id}`);
+  };
+
   return (
     <div className="catalog">
       <div className="header-container">CATALOG</div>
@@ -33,6 +39,7 @@ const Catalog: React.FC = () => {
             product={product}
             isFavorite={favorites.includes(product.id)}
             onToggleFavorite={toggleFavorite}
+            onClick={() => handleOpenProduct(product.id)}
           />
         ))}
       </div>

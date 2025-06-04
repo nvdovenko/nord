@@ -7,6 +7,7 @@ import Favorites from './pages/favorites/Favorites';
 import Cart from './pages/cart/Cart';
 import Auth from './pages/auth/Auth';
 import Catalog from './pages/catalog/Catalog';
+import Product from './pages/product/Product';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <Route path="favorites" element={<Favorites />} />
           <Route path="cart" element={<Cart />} />
           <Route path="auth" element={<Auth />} />
+          <Route path="/product/:id" element={<Product />} />
         </Route>
       </Routes>
     </Router>
